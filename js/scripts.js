@@ -18,21 +18,21 @@ var triangleChecker = function(side1, side2, side3) {
 };
 
 
-$(document).ready(function() {
+  $(document).ready(function() {
 
-  $("form.triangle-form").submit(function(event) {
+    $("form.triangle-form").submit(function(event) {
 
-    side1 = parseInt($(".side1").val())
-    side2 = parseInt($(".side2").val())
-    side3 = parseInt($(".side3").val())
+      side1 = parseInt($(".side1").val())
+      side2 = parseInt($(".side2").val())
+      side3 = parseInt($(".side3").val())
 
-    result = triangleChecker(side1, side2, side3)
+      result = triangleChecker(side1, side2, side3)
 
-    $(".answer").text(result)
+      $(".answer").text(result)
 
 
 
-    event.preventDefault();
+      event.preventDefault();
   });
 
 });
