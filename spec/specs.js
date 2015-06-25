@@ -10,4 +10,8 @@ describe('triangleChecker', function(){
   it('returns isosceles when only 2 sides are equal', function() {
     expect(triangleChecker(10,10,12)).to.equal("Isosceles");
   });
+
+  it('returns that the input of 3 sides does not ccreate a triangle', function(){
+      expect(triangleChecker(2,2,8)).to.equal("This is nowhere near triangle territory, go back to 1st grade math class!");
+  });
 });
