@@ -1,19 +1,19 @@
 var triangleChecker = function(side1, side2, side3) {
 
   if ((side1 + side2 <= side3) || (side2 + side3 <= side1) || (side1 + side3 <= side2)) {
-    return "This is nowhere near triangle territory, go back to 1st grade math class!"
+    return "This is nowhere near triangle territory, go back to 1st grade math class!";
   }
 
    else if((side1 === side2) && (side1 === side3)) {
-    return "Equilateral"
+    return "Equilateral";
   }
 
   else if ((side1 !== side2) && (side2 !== side3) && (side3 !== side1)) {
-    return "Scalene"
+    return "Scalene";
   }
 
   else if ((side1 === side2) || (side1 === side3) || (side2 === side3)) {
-    return "Isosceles"
+    return "Isosceles";
   }
 };
 
@@ -30,6 +30,9 @@ $(document).ready(function() {
 
     $(".answer").text(result)
 
-    event.preventDefeult();
+
+
+    event.preventDefault();
   });
+
 });
